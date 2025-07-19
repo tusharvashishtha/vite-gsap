@@ -35,6 +35,8 @@ const App = () => {
       });
 
       // Spacing Animation
+      if (window.innerWidth > 500) {
+      // Run your GSAP animations
       gsap.fromTo(
         titleRef.current,
         { gap: "2rem" },
@@ -46,7 +48,7 @@ const App = () => {
         { gap: "3rem" },
         { gap: "10rem", duration: 0.8, ease: "power2.out", delay: 1.4 }
       );
-
+    }
       // Pineapple Bounce + Button (FIXED)
       gsap.fromTo(
         pineappleRef.current,
@@ -143,7 +145,7 @@ const App = () => {
             {/* Title */}
             <div
               ref={titleRef}
-              className="text-2xl md:text-[5rem] font-[antonio] font-semibold tracking-wider uppercase text-[#523122] flex flex-wrap justify-center overflow-hidden gap-[2rem]"
+              className="text-3xl lg:text-6xl md:text-5xl w-[100vw] bg-red-400 sm:text-4xl xl:text-[7rem] font-[antonio] font-semibold tracking-wider uppercase text-[#523122] flex flex-wrap justify-center overflow-hidden gap-[2rem]"
             >
               <div>
                 <span>{renderText("FULL")}</span>&nbsp;
@@ -158,12 +160,12 @@ const App = () => {
             {/* Subheading */}
             <div
               ref={subheadingRef}
-              className="relative flex justify-center gap-[3rem] z-20"
+              className="relative flex  w-full justify-center gap-[3rem] z-20"
             >
               {["carbliss", "cocktails"].map((word, i) => (
                 <h1
                   key={i}
-                  className="text-xl md:text-[7rem] font-extrabold mix-blend-difference font-[antonio] uppercase leading-tight text-[#111]"
+                  className="text-3xl lg:text-6xl md:text-5xl sm:text-5xl xl:text-[7rem] font-extrabold mix-blend-difference font-[antonio] uppercase leading-tight text-[#111]"
                 >
                   {word}
                 </h1>
@@ -182,7 +184,7 @@ const App = () => {
       </div>
 
       {/* About Section */}
-      <div className="w-full bg-red-400 h-screen flex items-center justify-center px-10 text-center">
+      <div className="w-full h-screen flex items-center justify-center px-10 text-center">
         <div>
           <h2 className="text-4xl md:text-6xl font-[antonio] font-bold text-[#523122] mb-4">
             About Carbliss
