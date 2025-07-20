@@ -1,15 +1,12 @@
 import React from 'react'
 import { ProductCard } from './ProductCard'
 import ProductDisplay from './ProductDisplay'
+import LoginPage from './LoginPage'
 
 const App = () => {
   return (
     <div>
-      
-
-      <div className='h-screen w-full bg-red-400'>
-
-      </div>
+     <LoginPage />
     </div>
   )
 }
