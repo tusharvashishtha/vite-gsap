@@ -19,7 +19,7 @@ const LoginPage = () => {
           <form className='w-full flex flex-col mt-5'>
             <input type="text" placeholder="Enter your name" className='h-10 pl-5 mb-3 w-full bg-[#F8E4D5] rounded-full border-none focus:bg-white focus:outline-none' />
             <input type="text" placeholder="Enter your email" className='h-10 pl-5 mb-3 w-full bg-[#F8E4D5] rounded-full border-none focus:bg-white focus:outline-none' />
-            <input type="text" placeholder="Message" className='h-20 pl-5 mb-3 w-full bg-[#F8E4D5] rounded-4xl border-none focus:bg-white focus:outline-none' />
+           
             <button className='font-semibold text-lg h-10 w-full bg-[#E3A458] text-[#523122] text-center rounded-4xl border-none focus:outline-none'>Submit</button>
           </form>
         </div>
