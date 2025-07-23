@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const LoginPage = () => {
+const SignUp = () => {
   return (
     <div className='h-screen w-full flex flex-col lg:flex-row justify-center items-center bg-amber-900'>
       {/* Mobile View */}
