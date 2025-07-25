@@ -89,7 +89,7 @@ const LoginPage = () => {
                   <button className='font-semibold text-xl h-15 w-[30%] bg-[#E3A458] text-[#523122] text-center rounded-4xl border-none focus:outline-none'>Submit</button>
                 </div>
               </form>
-             <div>Don't have an account? <Link to="/signup">Sign Up</Link></div>
+             <div>Don't have an account? </div>
             </div>
           </div>
         </div>

@@ -3,12 +3,14 @@ import { ProductCard } from './ProductCard'
 import ProductDisplay from './ProductDisplay'
 import LoginPage from './LoginPage'
 import ProductDetails from './ProductDetails'
+import Footer from './Footer'
 
 
 const App = () => {
   return (
     <div>
-     <ProductDetails />
+      <LoginPage />
+     <Footer />
     </div>
   )
 }
